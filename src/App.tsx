@@ -5,7 +5,12 @@ import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
-function TagList({ title, tags }) {
+interface ITagListProps {
+  title: string;
+  tags: Array<string>;
+}
+
+function TagList({ title, tags }: ITagListProps) {
   return (
     <div className="mt-8 px-6 max-w-5xl mx-auto">
       <div className="text-white text-lg font-semibold mb-4">{title}</div>
@@ -108,22 +113,15 @@ function Header() {
   );
 }
 
-export default function App() {
-  const [tags, setTags] = useState([
-    'NFT',
-    'Metaverse',
-    'Sustainable',
-    'Sonder',
-    'FOMO',
-    'Ghosting',
-  ]);
+const TAGS = ['NFT', 'Metaverse', 'Sustainable', 'Sonder', 'FOMO', 'Ghosting'];
 
+export default function App() {
   return (
     <main className="bg-black min-h-screen text-white">
       <Header />
       <BoxArea97 />
-      <TagList title="Trending" tags={tags} />
-      <TagList title="For you" tags={tags} />
+      <TagList title="Trending" tags={TAGS} />
+      <TagList title="For you" tags={TAGS} />
     </main>
   );
 }
