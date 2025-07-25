@@ -34,6 +34,26 @@ export interface ISearchBarProps
   className?: string;
 }
 
+/**
+ * A customizable search bar component with variants and optional button
+ *
+ * @param initialValue - Initial search value
+ * @param onSearch - Callback fired when search value changes
+ * @param showButton=true - Whether to show the search button
+ * @param placeholder='Type to search...' - Input placeholder text
+ * @param rounded='xl' - Border radius variant ('xl' | '2xl')
+ * @param variant='large' - Size variant ('small' | 'large')
+ * @param className='' - Additional CSS classes
+ *
+ * @example
+ * <SearchBar
+ *   initialValue=""
+ *   onSearch={(value) => console.log(value)}
+ *   variant="large"
+ *   rounded="xl"
+ *   showButton={true}
+ * />
+ */
 function SearchBar({
   showButton = true,
   placeholder = 'Type to search...',
