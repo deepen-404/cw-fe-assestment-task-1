@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { ISearchBarProps } from '../components/search-bar';
+import type { ISearchBarProps } from '@/shared/components/search-bar';
 
 /**
  * A custom hook for managing search bar state

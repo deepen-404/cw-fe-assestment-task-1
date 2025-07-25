@@ -1,4 +1,4 @@
-import SearchBar from '../../../shared/components/search-bar';
+import SearchBar from '@/shared/components/search-bar';
 
 function Body() {
   return (
