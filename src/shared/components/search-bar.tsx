@@ -1,8 +1,8 @@
 import { Search } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import Button from '@/components/ui/button';
+import { Input } from '@/shared/components/ui/input';
+import Button from '@/shared/components/ui/button';
 import { useSearchBarValues } from '../hooks/useSearchBarValues';
-import { cn } from '@/lib/utils';
+import { cn } from '@/shared/lib/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 const searchBarVariants = cva(
