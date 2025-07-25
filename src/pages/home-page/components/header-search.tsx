@@ -1,4 +1,4 @@
-import SearchBar from '@/pages/home-page/components/search-bar';
+import SearchBar from '@/shared/components/search-bar';
 
 function HeaderSearch() {
   return (
