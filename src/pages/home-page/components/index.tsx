@@ -6,9 +6,7 @@ import Body from '@/pages/home-page/components/body';
 function HomePage() {
   return (
     <main className="bg-background min-h-screen text-white">
-      <div className="sticky top-0 z-10 bg-background">
-        <Header />
-      </div>
+      <Header />
 
       <div className="mt-9 mx-auto w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] xl:max-w-4xl space-y-6">
         <Body />

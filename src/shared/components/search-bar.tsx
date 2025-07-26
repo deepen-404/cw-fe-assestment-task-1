@@ -29,6 +29,7 @@ export interface ISearchBarProps
   extends VariantProps<typeof searchBarVariants> {
   initialValue: string;
   onSearch: (search: string) => void;
+  onSubmit?: (search: string) => void;
   showButton?: boolean;
   placeholder?: string;
   className?: string;
@@ -60,28 +61,51 @@ function SearchBar({
   rounded,
   variant,
   className = '',
+  'aria-label': ariaLabel,
+  onSubmit,
   ...props
-}: ISearchBarProps) {
+}: ISearchBarProps & { 'aria-label'?: string }) {
   const { searchValue, handleSearch } = useSearchBarValues(props);
 
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    if (onSubmit) onSubmit(searchValue);
+    else handleSearch(searchValue);
+  }
+
   return (
-    <div className={cn(searchBarVariants({ rounded, variant }), className)}>
+    <form
+      className={cn(searchBarVariants({ rounded, variant }), className)}
+      onSubmit={handleSubmit}
+      role="search"
+    >
       <div className="w-full p-1 flex items-center">
-        <Search className="text-gray-400 w-[1.1rem] aspect-square" />
+        <Search
+          className="text-gray-400 w-[1.1rem] aspect-square"
+          aria-hidden="true"
+        />
         <Input
           value={searchValue}
-          onChange={handleSearch}
+          onChange={(e) => handleSearch(e.target.value)}
           type="text"
           placeholder={placeholder}
-          className="flex-1 w-full bg-transparent border-none text-white placeholder:text-muted-text placeholder:text-[0.9rem]"
+          className="flex-1 w-full bg-transparent border-none text-white placeholder:text-muted-text placeholder:text-[0.9rem] focus:outline-none focus:ring-0"
+          aria-label={ariaLabel || placeholder}
+          autoComplete="off"
+          spellCheck="false"
         />
       </div>
       {showButton && (
-        <Button className="bg-blue font-semibold rounded-lg h-10">
+        <Button
+          type="submit"
+          aria-label="Submit search query"
+          className="bg-blue font-semibold rounded-lg h-10"
+        >
           Search
         </Button>
       )}
-    </div>
+    </form>
   );
 }
 
