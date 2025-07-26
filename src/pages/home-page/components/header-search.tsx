@@ -10,6 +10,7 @@ function HeaderSearch() {
       rounded="2xl"
       variant="small"
       className="w-44"
+      aria-label="Search dictionary"
     />
   );
 }
