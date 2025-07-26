@@ -29,6 +29,7 @@
 
 ## Technical Decisions
 
+- Used separate branches for changes and improvements to maintain clean development workflow
 - Maintained strict TypeScript typing while adding accessibility features
 - Followed React best practices with proper hook usage and event handling
 - Chose white focus indicators for optimal contrast on dark background
