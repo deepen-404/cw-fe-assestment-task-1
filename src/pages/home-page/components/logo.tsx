@@ -1,7 +1,7 @@
 function Logo() {
-  const handleLogoClick = () => {
+  function handleLogoClick() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }
 
   return (
     <button
