@@ -9,23 +9,9 @@ function HomePage() {
       <Header />
 
       <div className="mt-9 mx-auto w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] xl:max-w-4xl space-y-6">
-        <section aria-label="Hero Search Section">
-          <Body />
-        </section>
-
-        <section aria-labelledby="trending-heading">
-          <h2 id="trending-heading" className="sr-only">
-            Trending
-          </h2>
-          <TagList title="Trending" tags={TAGS} />
-        </section>
-
-        <section aria-labelledby="foryou-heading">
-          <h2 id="foryou-heading" className="sr-only">
-            For you
-          </h2>
-          <TagList title="For you" tags={TAGS} />
-        </section>
+        <Body />
+        <TagList title="Trending" tags={TAGS} />
+        <TagList title="For you" tags={TAGS} />
       </div>
     </main>
   );
