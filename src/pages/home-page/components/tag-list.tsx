@@ -21,9 +21,7 @@ function TagList({ title, tags }: ITagListProps) {
               asChild
               className="py-1 px-3 rounded-xl bg-tag text-sm text-muted-text focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-background"
             >
-              <span tabIndex={0} role="button" aria-label={`${tag} tag`}>
-                {tag}
-              </span>
+              <button aria-label={`${tag} tag`}>{tag}</button>
             </Badge>
           </li>
         ))}
