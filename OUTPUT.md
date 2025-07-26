@@ -6,13 +6,12 @@
 - Added `Husky` pre-commit hooks for automatic linting and formatting checks
 - Cleaned up unused dependencies and files
 - Refactored to `absolute imports` for better maintainability
+- Added page-specific file and folder structure for better organization
 
 ## Component Development
 
-- Created reusable `SearchBar` component with variants and proper TypeScript interfaces
-- Added `JSDoc` documentation for all component props
-- Added `useSearchBarValues` hook to accept string parameters for better reusability
-- Implemented proper form handling with separate onChange/onSubmit callbacks
+- Broke down each UI section into its own component (`header`, `logo`, `user-avatar`, `body`, `tag-list`)  for better maintainability  
+- Created reusable `SearchBar` component with `variants`, `JSDoc` documentation, `useSearchBarValues` hook, and proper TypeScript interfaces
 
 ## Accessibility Implementation
 
@@ -30,8 +29,8 @@
 ## Technical Decisions
 
 - Used separate branches for changes and improvements to maintain clean development workflow
-- Maintained strict TypeScript typing while adding accessibility features
-- Followed React best practices with proper hook usage and event handling
+- Maintained strict TypeScript typing while buidling components adding accessibility features
+- Added css variables for reusable colors from design
 - Chose white focus indicators for optimal contrast on dark background
 
 **Result**: Transformed static UI into fully responsive, accessible, keyboard-navigable interface.

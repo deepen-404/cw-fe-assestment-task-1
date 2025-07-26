@@ -19,7 +19,7 @@ function TagList({ title, tags }: ITagListProps) {
           <li key={tag}>
             <Badge
               asChild
-              className="py-1 px-3 rounded-lg bg-tag text-sm text-muted-text focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-background"
+              className="py-1 px-3 rounded-xl bg-tag text-sm text-muted-text focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-background"
             >
               <span tabIndex={0} role="button" aria-label={`${tag} tag`}>
                 {tag}
