@@ -2,9 +2,10 @@ import SearchBar from '@/shared/components/search-bar';
 
 function Body() {
   return (
-    <div className="relative">
+    <section aria-label="Hero" className="relative">
       <img
         src="/task1/hero-bg.png"
+        alt="Abstract modern background"
         className="w-full h-[28rem] md:h-[calc(100dvh-22rem)] object-cover rounded-xl"
       />
 
@@ -22,7 +23,7 @@ function Body() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -7,8 +7,13 @@ interface ITagListProps {
 
 function TagList({ title, tags }: ITagListProps) {
   return (
-    <div>
-      <div className="text-white text-lg font-semibold mb-4">{title}</div>
+    <section aria-labelledby={`${title.toLowerCase()}-heading`}>
+      <h2
+        id={`${title.toLowerCase()}-heading`}
+        className="text-white text-lg font-semibold mb-4"
+      >
+        {title}
+      </h2>
       <div className="flex flex-wrap gap-3">
         {tags.map((tag) => (
           <Badge
@@ -19,7 +24,7 @@ function TagList({ title, tags }: ITagListProps) {
           </Badge>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

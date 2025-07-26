@@ -12,7 +12,7 @@ export function useSearchBarValues({
   initialValue = '',
   onSearch,
 }: Pick<ISearchBarProps, 'initialValue' | 'onSearch'>) {
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState(initialValue);
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     const searchQry = e.target.value;
