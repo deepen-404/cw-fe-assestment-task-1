@@ -30,6 +30,7 @@
 ## Optimization
 
 - Used `webp`  reduced file size and faster load time (from approximately 2 MB to 44 KB )
+- Added `link` tags with `preload` to improve parallel image loading, reducing LCP
 - Removed 37 unused UI components and 25 unused dependencies, reducing the final bundle size.
 
 ## Technical Decisions
