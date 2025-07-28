@@ -36,6 +36,7 @@
 
 - Used separate branches for changes and improvements to maintain clean development workflow
 - Maintained strict TypeScript typing while buidling components adding accessibility features
+- Avoided barrel imports and exports as per tkdodo's [blog](https://tkdodo.eu/blog/please-stop-using-barrel-files)
 - Added css variables for reusable colors from design
 - Chose white focus indicators for optimal contrast on dark background
 
