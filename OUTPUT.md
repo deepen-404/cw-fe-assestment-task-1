@@ -28,8 +28,7 @@
 - **Tag Lists**: Implemented semantic list structure with keyboard navigation
 
 ## Optimization
-
-- Used `webp`  reduced file size and faster load time (from approximately 2 MB to 44 KB )
+- Used `webp` format for hero image resulting in reduced file size and faster load time (from approximately 2 MB to 44 KB )
 - Added `link` tags with `preload` to improve parallel image loading, reducing LCP
 - Removed 37 unused UI components and 25 unused dependencies, reducing the final bundle size.
 
@@ -37,6 +36,7 @@
 
 - Used separate branches for changes and improvements to maintain clean development workflow
 - Maintained strict TypeScript typing while buidling components adding accessibility features
+- Avoided barrel imports and exports as per tkdodo's [blog](https://tkdodo.eu/blog/please-stop-using-barrel-files)
 - Added css variables for reusable colors from design
 - Chose white focus indicators for optimal contrast on dark background
 
