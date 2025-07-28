@@ -1,3 +1,5 @@
+import Image from '@/shared/components/ui/image';
+
 function Logo() {
   function handleLogoClick() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -10,10 +12,11 @@ function Logo() {
       aria-label="Worctionary home - scroll to top"
       type="button"
     >
-      <img
+      <Image
         src="/task1/logo.png"
         alt="Worctionary logo"
         className="w-5 md:w-4 aspect-square"
+        isPriority
       />
       <div className="hidden md:block text-white font-semibold text-lg">
         Worctionary

@@ -1,13 +1,15 @@
 import SearchBar from '@/shared/components/search-bar';
+import Image from '@/shared/components/ui/image';
 
 function Body() {
   return (
     <section aria-labelledby="hero-heading" className="relative" role="banner">
-      <img
-        src="/task1/hero-bg.png"
+      <Image
+        src="/task1/hero-bg.webp"
         alt=""
         className="w-full h-[28rem] md:h-[calc(100dvh-22rem)] object-cover rounded-xl"
         role="presentation"
+        isPriority
       />
 
       <div className="absolute inset-0 flex flex-col gap-y-4 items-center justify-center">
