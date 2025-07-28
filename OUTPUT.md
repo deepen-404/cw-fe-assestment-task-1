@@ -7,6 +7,7 @@
 - Cleaned up unused dependencies and files
 - Refactored to `absolute imports` for better maintainability
 - Added page-specific file and folder structure for better organization
+- Configured Vercel for seamless `deployment` and live previews  
 
 ## Component Development
 
@@ -31,6 +32,7 @@
 - Used separate branches for changes and improvements to maintain clean development workflow
 - Maintained strict TypeScript typing while buidling components adding accessibility features
 - Added css variables for reusable colors from design
+- Avoided barrel imports as per the [blog](https://tkdodo.eu/blog/please-stop-using-barrel-files) from tkdodo
 - Chose white focus indicators for optimal contrast on dark background
 
 **Result**: Transformed static UI into fully responsive, accessible, keyboard-navigable interface.
