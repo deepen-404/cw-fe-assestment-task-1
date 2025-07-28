@@ -12,6 +12,7 @@
 
 - Broke down each UI section into its own component (`header`, `logo`, `user-avatar`, `body`, `tag-list`)  for better maintainability  
 - Created reusable `SearchBar` component with `variants`, `JSDoc` documentation, `useSearchBarValues` hook, and proper TypeScript interfaces
+- Created reusable `Image` component for optimized image loading and error handling
 
 ## Accessibility Implementation
 
@@ -25,6 +26,11 @@
 - **User Avatar**: Made keyboard accessible with proper ARIA labeling
 - **Search Components**: Added form structure, search roles, and proper event handling
 - **Tag Lists**: Implemented semantic list structure with keyboard navigation
+
+## Optimization
+
+- Used `webp`  reduced file size and faster load time (from approximately 2 MB to 44 KB )
+- Removed 37 unused UI components and 25 unused dependencies, reducing the final bundle size.
 
 ## Technical Decisions
 
