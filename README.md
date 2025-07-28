@@ -29,7 +29,7 @@
 
 ## Optimization
 
-- Used `webp`  reduced file size and faster load time (from approximately 2 MB to 44 KB )
+- Used `webp` format for hero image resulting in  reduced file size and faster load time (from approximately 2 MB to 44 KB )
 - Removed 37 unused UI components and 25 unused dependencies, reducing the final bundle size.
 
 ## Technical Decisions
